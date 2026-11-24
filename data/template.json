@@ -1,0 +1,665 @@
+{
+    "common": {
+        "globalUI": {
+            "loadingText": "Loading TiffinSutra Experience...",
+            "notFoundText": "Page Not Found"
+        },
+        "Footer": {
+            "logo": "/main logo/white-logo.png",
+            "brand": "TiffinSutra",
+            "description": "A home-style tiffin service delivering fresh, nutritious, and hygienic meals to your home or office.",
+            "socialLinks": [
+                {
+                    "icon": "Facebook",
+                    "href": "https://www.facebook.com"
+                },
+                {
+                    "icon": "Instagram",
+                    "href": "https://www.instagram.com"
+                },
+                {
+                    "icon": "Youtube",
+                    "href": "https://www.youtube.com"
+                },
+                {
+                    "icon": "Linkedin",
+                    "href": "https://www.linkedin.com"
+                }
+            ],
+            "quickLinks": {
+                "title": "Quick Links",
+                "links": [
+                    {
+                        "label": "Home",
+                        "href": "#home"
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#about"
+                    },
+                    {
+                        "label": "Our Meals",
+                        "href": "#services"
+                    },
+                    {
+                        "label": "Why Choose Us",
+                        "href": "#why-choose-us"
+                    },
+                    {
+                        "label": "Gallery",
+                        "href": "#gallery"
+                    },
+                    {
+                        "label": "Testimonials",
+                        "href": "#testimonials"
+                    },
+                    {
+                        "label": "FAQs",
+                        "href": "#faq"
+                    },
+                    {
+                        "label": "Contact Us",
+                        "href": "#contact"
+                    }
+                ]
+            },
+            "payments": {
+                "title": "Pay Online With",
+                "items": [
+                    {
+                        "name": "PhonePe",
+                        "image" : "/other/PhonePe.png"
+                    },
+                    {
+                        "name": "Paytm",
+                         "image" : "/other/paytm.webp"
+                    },
+                    {
+                        "name": "Google Pay",
+                         "image" : "/other/Google_Pay.webp"
+                    },
+                    {
+                        "name": "UPI",
+                         "image" : "/other/upi.jpg"
+                    }
+                ]
+            },
+            "contactInfo": {
+                "title": "Contact Info",
+                "items": [
+                    {
+                        "icon": "MapPin",
+                        "value": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+                        "href": ""
+                    },
+                    {
+                        "icon": "Phone",
+                        "value": "+1 (000) 000-0000",
+                        "href": "tel:+10000000000"
+                    },
+                    {
+                        "icon": "Mail",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com"
+                    }
+                ]
+            },
+            "copyright": "TiffinSutra. All Rights Reserved. Powered by Lestow."
+        }
+    },
+    "categories": {
+        "WedBliss": {
+            "sections": {
+                "TopHeader": {
+                    "variants": {
+                        "WedBlissTopHeader2": {
+                            "contactLinks": [
+                                {
+                                    "id": "contact1",
+                                    "label": "info@xyz.com",
+                                    "url": "mailto:info@xyz.com"
+                                },
+                                {
+                                    "id": "contact2",
+                                    "label": "+1 (000) 000-0000",
+                                    "url": "tel:+10000000000"
+                                },
+                                {
+                                    "id": "contact3",
+                                    "label": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+                                    "url": ""
+                                }
+                            ],
+                            "socialLinks": [
+                                {
+                                    "id": "fs1",
+                                    "icon": "FaFacebookF",
+                                    "url": "https://www.facebook.com"
+                                },
+                                {
+                                    "id": "fs2",
+                                    "icon": "FaInstagram",
+                                    "url": "https://www.instagram.com"
+                                },
+                                {
+                                    "id": "fs3",
+                                    "icon": "FaLinkedinIn",
+                                    "url": "https://www.linkedin.com"
+                                },
+                                {
+                                    "id": "fs4",
+                                    "icon": "FaYoutube",
+                                    "url": "https://www.youtube.com"
+                                },
+                                {
+                                    "id": "fs5",
+                                    "icon": "FaTwitter",
+                                    "url": "https://twitter.com"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Header": {
+                    "variants": {
+                        "WedBlissHeader2": {
+                            "logo": "/main logo/logo.png",
+                            "logoAlt": "TiffinSutra Logo",
+                            "navLinks": [
+                                {
+                                    "id": "nl-home",
+                                    "label": "Home",
+                                    "url": "#home"
+                                },
+                                {
+                                    "id": "nl-about",
+                                    "label": "About Us",
+                                    "url": "#about"
+                                },
+                                {
+                                    "id": "nl-services",
+                                    "label": "Our Meals",
+                                    "url": "#services"
+                                },
+                                {
+                                    "id": "nl-pricing",
+                                    "label": "WHY CHOOSE US",
+                                    "url": "#why-choose-us"
+                                },
+                                {
+                                    "id": "nl-gallery",
+                                    "label": "Gallery",
+                                    "url": "#gallery"
+                                },
+                                {
+                                    "id": "nl-testimonials",
+                                    "label": "Testimonials",
+                                    "url": "#testimonials"
+                                },
+                                {
+                                    "id": "nl-faq",
+                                    "label": "FAQs",
+                                    "url": "#faq"
+                                }
+                            ],
+                            "contactButton": {
+                                "text": "Contact Us",
+                                "url": "#contact"
+                            }
+                        }
+                    }
+                },
+                "Hero": {
+                    "variants": {
+                        "WedBlissHero2": {
+                            "id": "home",
+                            "subtitle": "FRESH • HEALTHY • HOME-COOKED",
+                            "title1": "Daily Home-Style",
+                            "title2": "Tiffin Service",
+                            "description": "Nutritious, hygienic and delicious meals delivered to your home or office on time, every day.",
+                            "image1": "/other/home-1.webp"
+                        }
+                    }
+                },
+                "AboutUs": {
+                    "variants": {
+                        "WedBlissAboutUs2": {
+                            "subtitle": "ABOUT US",
+                            "title1": "Bringing Fresh, Home-Style",
+                            "title2": "Meals to Your Everyday Life",
+                            "description1": "TiffinSutra is a home-style tiffin service dedicated to serving fresh, nutritious and delicious meals to students, working professionals and families. We combine quality ingredients, hygienic preparation and timely delivery to make your daily meals simple, healthy and worry-free.",
+                            "description2": "Enjoy home-style, balanced and hygienic meals, prepared with care and delivered on time.",
+                            "feature": {
+                                "title": "Fresh & Hygienic Meals",
+                                "description": "Enjoy home-style, balanced and hygienic meals, prepared with care and delivered on time."
+                            },
+                            "imageMain": "/other/about-1.webp",
+                            "aboutVideo": "/other/about-2.webp",
+                            "imageSmall": "/other/about-3.webp"
+                        }
+                    }
+                },
+                "Services": {
+                    "variants": {
+                        "WedBlissServices2": {
+                            "subtitle": "OUR SERVICES",
+                            "title1": "Our Tiffin",
+                            "title2": "Meal Services",
+                            "description": "Fresh, home-style and nutritious meals for every lifestyle and dietary need.",
+                            "services": [
+                                {
+                                    "id": "s1",
+                                    "title": "Daily Tiffin Service",
+                                    "description": "Fresh, home-cooked meals delivered to your home or office every day.",
+                                    "image": "/other/service-1.webp",
+                                    "icon": "FaUtensils",
+                                    "url": "#contact"
+                                },
+                                {
+                                    "id": "s2",
+                                    "title": "Healthy Meal Plans",
+                                    "description": "Balanced and nutritious meals for a healthy and active lifestyle.",
+                                    "image": "/other/service-2.webp",
+                                    "icon": "FaHeart",
+                                    "url": "#contact"
+                                },
+                                {
+                                    "id": "s3",
+                                    "title": "Vegetarian Meals",
+                                    "description": "Delicious and wholesome vegetarian meals prepared with fresh ingredients.",
+                                    "image": "/other/service-3.webp",
+                                    "icon": "FaLeaf",
+                                    "url": "#contact"
+                                },
+                                {
+                                    "id": "s4",
+                                    "title": "Bulk & Corporate Tiffin",
+                                    "description": "Customized meal solutions for offices, teams and corporate events.",
+                                    "image": "/other/service-4.webp",
+                                    "icon": "FaBuilding",
+                                    "url": "#contact"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "WhatWeDo": {
+                    "variants": {
+                        "WedBlissWhatWeDo2": {
+                            "subtitle": "WHY CHOOSE US",
+                            "title1": "We Serve Fresh, Healthy &",
+                            "title2": "Home-Style Meals",
+                            "title3": "You Can Trust",
+                            "description": "We are committed to delivering nutritious, hygienic and delicious home-style meals that make healthy eating simple and convenient. \n With quality ingredients, balanced recipes and a focus on customer satisfaction, we bring the taste of home to your doorstep.",
+                            "image": "/other/why-choose.webp",
+                            "features": [
+                                {
+                                    "id": "p1",
+                                    "icon": "ConciergeBell",
+                                    "title": "Fresh & Hygienic Food",
+                                    "description": "Prepared with clean, high-quality ingredients every day."
+                                },
+                                {
+                                    "id": "p2",
+                                    "icon": "Leaf",
+                                    "title": "Healthy & Balanced Meals",
+                                    "description": "Nutritious, home-style meals for a healthier lifestyle."
+                                },
+                                {
+                                    "id": "p3",
+                                    "icon": "ChefHat",
+                                    "title": "Expert Meal Planning",
+                                    "description": "Curated by food experts to suit different dietary needs."
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Gallery": {
+                    "variants": {
+                        "WedBlissGallery2": {
+                            "subtitle": "",
+                            "title1": "Our",
+                            "title2": "Gallery",
+                            "description": "A glimpse of our fresh meals, tiffin preparation, kitchen, and happy customers.",
+                            "backgroundImage": "/other/gallery-bg.jpg",
+                            "tabs": [
+                                {
+                                    "id": "photos",
+                                    "label": "Photo Gallery",
+                                    "icon": "Image"
+                                },
+                                {
+                                    "id": "videos",
+                                    "label": "Video Gallery",
+                                    "icon": "Video"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "id": "gal1",
+                                    "image": "/other/gallery-img-1.webp",
+                                    "alt": "Fresh Home-Style Tiffin Meals"
+                                },
+                                {
+                                    "id": "gal2",
+                                    "image": "/other/gallery-img-2.webp",
+                                    "alt": "Hygienic Tiffin Packaging"
+                                },
+                                {
+                                    "id": "gal3",
+                                    "image": "/other/gallery-img-3.webp",
+                                    "alt": "Professional Kitchen and Chefs"
+                                },
+                                {
+                                    "id": "gal4",
+                                    "image": "/other/gallery-img-4.webp",
+                                    "alt": "Fresh and Healthy Paneer Salad"
+                                },
+                                {
+                                    "id": "gal5",
+                                    "image": "/other/gallery-img-5.webp",
+                                    "alt": "Daily Fresh Meal Preparation"
+                                },
+                                {
+                                    "id": "gal6",
+                                    "image": "/other/gallery-img-6.webp",
+                                    "alt": "On-Time Doorstep Delivery"
+                                },
+                                {
+                                    "id": "gal7",
+                                    "image": "/other/gallery-img-7.webp",
+                                    "alt": "Fresh Vegetable Cooking"
+                                },
+                                {
+                                    "id": "gal8",
+                                    "image": "/other/gallery-img-8.webp",
+                                    "alt": "Freshly Prepared Chapati"
+                                }
+                            ],
+                            "videos": [
+                                {
+                                    "id": "vid1",
+                                    "thumbnail": "/other/professional-chefs.webp",
+                                    "title": "Inside Our Kitchen",
+                                    "videoUrl": "/videos/kitchen.mp4"
+                                },
+                                {
+                                    "id": "vid2",
+                                    "thumbnail": "/other/meal-preparation.webp",
+                                    "title": "Daily Meal Preparation",
+                                    "videoUrl": "/videos/meal-preparation.mp4"
+                                },
+                                {
+                                    "id": "vid3",
+                                    "thumbnail": "/other/doorstep-delivery.webp",
+                                    "title": "Tiffin Delivery Service",
+                                    "videoUrl": "/videos/delivery.mp4"
+                                },
+                                {
+                                    "id": "vid4",
+                                    "thumbnail": "/other/fresh-vegetable-cooking.webp",
+                                    "title": "Fresh and Healthy Cooking",
+                                    "videoUrl": "/videos/cooking.mp4"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Testimonials": {
+                    "variants": {
+                        "WedBlissTestimonials2": {
+                            "subtitle": "TESTIMONIALS",
+                            "title1": "What Our",
+                            "title2": "Customers Say!",
+                            "testimonials": [
+                                {
+                                    "id": "t1",
+                                    "name": "Abhishek Kashyap",
+                                    "designation": "Software Engineer",
+                                    "image": "/other/profile-1.jpg",
+                                    "rating": 5,
+                                    "description": "I never tasted this kind of amazing quality of food from any other service. Highly recommended!"
+                                },
+                                {
+                                    "id": "t2",
+                                    "name": "Priyanka Arora",
+                                    "designation": "Events Manager",
+                                    "image": "/other/profile-3.jpg",
+                                    "rating": 5,
+                                    "description": "The meals are so tasty, fresh and homemade. Perfect portion, great variety and always on time."
+                                },
+                                {
+                                    "id": "t3",
+                                    "name": "Vidit Sathevala",
+                                    "designation": "Business Consultant",
+                                    "image": "/other/profile-2.jpg",
+                                    "rating": 5,
+                                    "description": "Great meal delivery service across Delhi NCR. The food is healthy, hygienic and full of flavor."
+                                },
+                                {
+                                    "id": "t4",
+                                    "name": "Deepa Chakravarty",
+                                    "designation": "HR Professional",
+                                    "image": "/other/profile-8.jpg",
+                                    "rating": 5,
+                                    "description": "Love the meal plans! The food is fresh, well-balanced and keeps me energized throughout the day."
+                                },
+                                {
+                                    "id": "t5",
+                                    "name": "Rohit Malhotra",
+                                    "designation": "Fitness Enthusiast",
+                                    "image": "/other/profile-7.jpg",
+                                    "rating": 5,
+                                    "description": "The taste, quality and hygiene are just excellent. A perfect solution for healthy and hassle-free meals."
+                                },
+                                {
+                                    "id": "t6",
+                                    "name": "Mona Gupta",
+                                    "designation": "Home Maker",
+                                    "image": "/other/profile-6.jpg",
+                                    "rating": 5,
+                                    "description": "We loved the taste and quality of the food. Their meal plans are healthy, delicious and very convenient."
+                                },
+                                {
+                                    "id": "t7",
+                                    "name": "Dr. Kavita Maheshwari",
+                                    "designation": "Dentist",
+                                    "image": "/other/profile-5.jpg",
+                                    "rating": 5,
+                                    "description": "The food was lip-smacking and reminded me of my mom's cooking. Consistent quality and great service."
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Faq": {
+                    "variants": {
+                        "WedBlissFaq2": {
+                            "subtitle": "",
+                            "title1": "Frequently Asked",
+                            "title2": "Questions",
+                            "description": "Find quick answers to the most common questions about our meal plans, orders, and delivery.",
+                            "backgroundImage": "/other/gallery-bg.jpg",
+                            "image": "/other/tiffin-faq.webp",
+                            "faqs": [
+                                {
+                                    "id": "faq1",
+                                    "question": "What areas do you deliver to?",
+                                    "answer": "We currently deliver across Delhi NCR, including Noida, Ghaziabad, Indirapuram, Vaishali, and nearby areas."
+                                },
+                                {
+                                    "id": "faq2",
+                                    "question": "Can I customize my meal plan?",
+                                    "answer": "Yes, you can customize your meal plan according to your food preferences, dietary requirements, and delivery schedule."
+                                },
+                                {
+                                    "id": "faq3",
+                                    "question": "Do you provide vegetarian meals only?",
+                                    "answer": "We specialize in fresh, nutritious and delicious vegetarian home-style meals prepared with quality ingredients."
+                                },
+                                {
+                                    "id": "faq4",
+                                    "question": "Can I pause or cancel my subscription?",
+                                    "answer": "Yes, you can pause or cancel your meal subscription by contacting our customer support team in advance."
+                                },
+                                {
+                                    "id": "faq5",
+                                    "question": "How do I place an order?",
+                                    "answer": "You can place an order by contacting us through our website, phone, or email. Our team will help you choose the right meal plan."
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Contact": {
+                    "variants": {
+                        "WedBlissContact2": {
+                            "contact": {
+                                "subtitle": "Get in Touch",
+                                "title1": "Contact",
+                                "title2": "Us",
+                                "description": "Have a question or want to place a bulk order? We’d love to hear from you.",
+                                "image": "/other/tiffin-contact.webp",
+                                "contactItems": [
+                                    {
+                                        "id": "contact1",
+                                        "icon": "Mail",
+                                        "title": "Email Us",
+                                        "value": "info@xyz.com",
+                                        "href": "mailto:info@xyz.com"
+                                    },
+                                    {
+                                        "id": "contact2",
+                                        "icon": "Phone",
+                                        "title": "Call Us",
+                                        "value": "+1 (000) 000-0000",
+                                        "href": "tel:+10000000000"
+                                    },
+                                    {
+                                        "id": "contact3",
+                                        "icon": "MapPin",
+                                        "title": "Our Address",
+                                        "value": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+                                        "href": ""
+                                    }
+                                ],
+                                "form": {
+                                    "title": "Send Us a Message",
+                                    "buttonText": "Send Message",
+                                    "fields": [
+                                        {
+                                            "name": "name",
+                                            "type": "text",
+                                            "placeholder": "Your Name",
+                                            "icon": "User",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "email",
+                                            "type": "email",
+                                            "placeholder": "Your Email",
+                                            "icon": "Mail",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "phone",
+                                            "type": "tel",
+                                            "placeholder": "Your Phone",
+                                            "icon": "Phone",
+                                            "required": true
+                                        },
+                                        {
+                                            "name": "message",
+                                            "type": "textarea",
+                                            "placeholder": "Your Message",
+                                            "icon": "MessageCircle",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                "statistics": {
+                                    "title": "TiffinSutra in Numbers",
+                                    "items": [
+                                        {
+                                            "id": "stat1",
+                                            "icon": "Users",
+                                            "value": 10,
+                                            "suffix": "K+",
+                                            "label": "Happy Customers"
+                                        },
+                                        {
+                                            "id": "stat2",
+                                            "icon": "ConciergeBell",
+                                            "value": 25,
+                                            "suffix": "K+",
+                                            "label": "Meals Delivered"
+                                        },
+                                        {
+                                            "id": "stat3",
+                                            "icon": "Bike",
+                                            "value": 99,
+                                            "suffix": "%",
+                                            "label": "On-Time Delivery"
+                                        },
+                                        {
+                                            "id": "stat4",
+                                            "icon": "Star",
+                                            "value": 4.8,
+                                            "suffix": "★",
+                                            "label": "Customer Rating"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "templateComponents": {
+                "shared": {
+                    "Header": "WedBlissHeader2",
+                    "Footer": "WedBlissFooter2"
+                },
+                "pages": {
+                    "home": {
+                        "components": [
+                            {
+                                "key": "HeroSection",
+                                "component": "WedBlissHero2"
+                            },
+                            {
+                                "key": "AboutUs",
+                                "component": "WedBlissAboutUs2"
+                            },
+                            {
+                                "key": "Services",
+                                "component": "WedBlissServices2"
+                            },
+                            {
+                                "key": "WhatWeDo",
+                                "component": "WedBlissWhatWeDo2"
+                            },
+                            {
+                                "key": "Gallery",
+                                "component": "WedBlissGallery2"
+                            },
+                            {
+                                "key": "Testimonials",
+                                "component": "WedBlissTestimonials2"
+                            },
+                            {
+                                "key": "Faq",
+                                "component": "WedBlissFaq2"
+                            },
+                            {
+                                "key": "Contact",
+                                "component": "WedBlissContact2"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
