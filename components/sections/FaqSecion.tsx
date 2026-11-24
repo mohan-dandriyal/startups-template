@@ -164,11 +164,11 @@ export default function FAQ() {
             {/* Main Heading */}
             <h2 className="text-[clamp(22px,2.8vw,50px)] font-extrabold leading-[1.1] tracking-[-0.035em] text-white">
 
-              <span className="block">
-                {section.title1}
+              <span className="sm:block">
+                {section.title1} {" "}
               </span>
 
-              <span className="block text-highlight">
+              <span className="sm:block text-highlight">
                 {section.title2}
               </span>
 

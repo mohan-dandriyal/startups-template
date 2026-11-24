@@ -157,7 +157,7 @@ export default function AboutUs() {
                                 variants={itemVariants}
                                 className="text-[clamp(22px,2.8vw,50px)] max-w-[700px] font-bold leading-[1.15] tracking-[-0.025em] text-foreground"
                             >
-                                Bringing Fresh, <span className="text-secondary">Home-Style Meals</span> to Your Everyday Life
+                                {about.title1} <span className="text-secondary">{about.title2}</span>
                             </motion.h2>
 
                             {/* Orange Underline */}
@@ -191,52 +191,6 @@ export default function AboutUs() {
                                         className="object-cover transition-transform duration-700 motion-safe:group-hover:scale-105"
                                     />
 
-                                    <div className="absolute inset-0 bg-black/5 transition-colors duration-300 group-hover:bg-black/15" />
-
-
-                                    {/* Play Button */}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <motion.button
-                                            type="button"
-                                            aria-label="Play about us video"
-                                            onClick={() => setVideoOpen(true)}
-                                            whileHover={
-                                                reduceMotion ? undefined : { scale: 1.1 }
-                                            }
-                                            whileTap={
-                                                reduceMotion ? undefined : { scale: 0.95 }
-                                            }
-                                            className="relative flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-white shadow-xl xl:h-24 xl:w-24"
-                                        >
-
-                                            {/* Pulse Animation */}
-                                            <motion.span
-                                                aria-hidden="true"
-                                                animate={
-                                                    reduceMotion
-                                                        ? undefined
-                                                        : {
-                                                            scale: [1, 1.4, 1.7],
-                                                            opacity: [0.6, 0.3, 0],
-                                                        }
-                                                }
-                                                transition={{
-                                                    duration: 2,
-                                                    repeat: Infinity,
-                                                    ease: "easeOut",
-                                                }}
-                                                className="absolute inset-0 rounded-full bg-white/50"
-                                            />
-
-
-                                            <Play
-                                                size={38}
-                                                fill="#ff8000"
-                                                stroke="#ff8000"
-                                                className="relative ml-1"
-                                            />
-                                        </motion.button>
-                                    </div>
                                 </motion.div>
 
                                 {/* Feature Content */}
@@ -278,63 +232,6 @@ export default function AboutUs() {
                 </Container>
             </section>
 
-            {/* VIDEO POPUP */}
-            <AnimatePresence>
-                {videoOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: reduceMotion ? 0 : 0.25 }}
-                        onClick={() => setVideoOpen(false)}
-                        className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 p-5 backdrop-blur-sm"
-                    >
-                        <motion.div
-                            role="dialog"
-                            aria-modal="true"
-                            aria-label="About TiffinSutra video"
-                            initial={{
-                                opacity: 0,
-                                scale: reduceMotion ? 1 : 0.9,
-                            }}
-                            animate={{
-                                opacity: 1,
-                                scale: 1,
-                            }}
-                            exit={{
-                                opacity: 0,
-                                scale: reduceMotion ? 1 : 0.9,
-                            }}
-                            transition={{
-                                duration: reduceMotion ? 0 : 0.35,
-                                ease: EASE,
-                            }}
-                            onClick={(event) => event.stopPropagation()}
-                            className="relative w-full max-w-5xl"
-                        >
-
-                            {/* Close Button */}
-                            <button
-                                type="button"
-                                autoFocus
-                                aria-label="Close video"
-                                onClick={() => setVideoOpen(false)}
-                                className="absolute -top-12 right-0 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white text-foreground transition-colors hover:bg-[#ff8000] hover:text-white"
-                            >
-                                <X size={24} />
-                            </button>
-
-                            {/* Video Player */}
-                            <div className="aspect-video overflow-hidden rounded-xl bg-black shadow-2xl">
-                                <p className="grid h-full place-items-center px-6 text-center text-white">
-                                    The about video is currently unavailable.
-                                </p>
-                            </div>
-
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
         </>
     );
 }

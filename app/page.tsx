@@ -1,5 +1,5 @@
 import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Heaer";
+import Header from "@/components/common/Header";
 import TopHeader from "@/components/common/TopHeader";
 import AboutUs from "@/components/sections/AboutSection";
 import Contact from "@/components/sections/ContactSection";
