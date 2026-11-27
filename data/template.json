@@ -68,19 +68,19 @@
                 "items": [
                     {
                         "name": "PhonePe",
-                        "image" : "/other/PhonePe.png"
+                        "image": "/other/PhonePe.png"
                     },
                     {
                         "name": "Paytm",
-                         "image" : "/other/paytm.webp"
+                        "image": "/other/paytm.webp"
                     },
                     {
                         "name": "Google Pay",
-                         "image" : "/other/Google_Pay.webp"
+                        "image": "/other/Google_Pay.webp"
                     },
                     {
                         "name": "UPI",
-                         "image" : "/other/upi.jpg"
+                        "image": "/other/upi.jpg"
                     }
                 ]
             },
@@ -375,32 +375,6 @@
                                     "id": "gal8",
                                     "image": "/other/gallery-img-8.webp",
                                     "alt": "Freshly Prepared Chapati"
-                                }
-                            ],
-                            "videos": [
-                                {
-                                    "id": "vid1",
-                                    "thumbnail": "/other/professional-chefs.webp",
-                                    "title": "Inside Our Kitchen",
-                                    "videoUrl": "/videos/kitchen.mp4"
-                                },
-                                {
-                                    "id": "vid2",
-                                    "thumbnail": "/other/meal-preparation.webp",
-                                    "title": "Daily Meal Preparation",
-                                    "videoUrl": "/videos/meal-preparation.mp4"
-                                },
-                                {
-                                    "id": "vid3",
-                                    "thumbnail": "/other/doorstep-delivery.webp",
-                                    "title": "Tiffin Delivery Service",
-                                    "videoUrl": "/videos/delivery.mp4"
-                                },
-                                {
-                                    "id": "vid4",
-                                    "thumbnail": "/other/fresh-vegetable-cooking.webp",
-                                    "title": "Fresh and Healthy Cooking",
-                                    "videoUrl": "/videos/cooking.mp4"
                                 }
                             ]
                         }
