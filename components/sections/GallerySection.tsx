@@ -86,7 +86,6 @@ function ViewerImage({
 }
 
 export default function Gallery() {
-    const [activeTab, setActiveTab] = useState("photos");
     const [selection, setSelection] = useState<Selection>(null);
     const [isOpen, setIsOpen] = useState(false);
     const viewer = useRef<HTMLDialogElement>(null);
@@ -94,21 +93,11 @@ export default function Gallery() {
     const reduceMotion = useReducedMotion();
 
     const images = gallery.images ?? [];
-    const videos = gallery.videos ?? [];
 
-    // Hide the Video tab if the JSON has no videos
-    const tabs = gallery.tabs.filter(
-        (tab) => tab.id !== "videos" || videos.length > 0
-    );
 
     const selectedImage = selection?.kind === "image" ? images[selection.index] : null;
-    const selectedVideo = selection?.kind === "video" ? videos[selection.index] : null;
-    const selectedYouTube = getYouTubeEmbedUrl(selectedVideo?.embedUrl);
-    const selectedEmbed = selectedYouTube
-        ? null
-        : getPinterestEmbedUrl(selectedVideo?.embedUrl);
-    const total = selection?.kind === "video" ? videos.length : images.length;
-    const label = selectedImage?.alt ?? selectedVideo?.title ?? "";
+    const total = images.length;
+    const label = selectedImage?.alt ?? "";
 
     function openViewer(kind: "image" | "video", index: number) {
         setSelection({ kind, index });
@@ -124,7 +113,7 @@ export default function Gallery() {
     function changeItem(direction: number) {
         setSelection((current) => {
             if (!current) return current;
-            const count = current.kind === "video" ? videos.length : images.length;
+            const count = images.length;
             return {
                 kind: current.kind,
                 index: (current.index + direction + count) % count,
@@ -241,44 +230,42 @@ export default function Gallery() {
             <Container className="pt-8">
                 <AnimatePresence mode="wait">
                     {/* PHOTO GALLERY */}
-                    {activeTab === "photos" && (
-                        <motion.div
-                            key="photos"
-                            id="gallery-panel-photos"
-                            role="tabpanel"
-                            aria-labelledby="gallery-tab-photos"
-                            exit={{
-                                opacity: 0,
-                                transition: { duration: reduceMotion ? 0 : 0.2 },
-                            }}
-                            className="grid grid-cols-2 gap-4 lg:grid-cols-4"
-                        >
-                            {images.map((item, index) => (
-                                <motion.button
-                                    key={item.id}
-                                    type="button"
-                                    aria-label={`View full image: ${item.alt}`}
-                                    aria-haspopup="dialog"
-                                    onClick={() => openViewer("image", index)}
-                                    variants={itemVariants}
-                                    initial={reduceMotion ? false : "hidden"}
-                                    whileInView="visible"
-                                    viewport={{ once: true, amount: 0.15 }}
-                                    className="group relative aspect-[1.73] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-gray-100 shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                >
-                                    <Image
-                                        src={item.image}
-                                        alt={item.alt}
-                                        fill
-                                        sizes="(max-width: 1023px) 50vw, 25vw"
-                                        className="object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-110"
-                                    />
-                                </motion.button>
-                            ))}
-                        </motion.div>
-                    )}
+                    <motion.div
+                        key="photos"
+                        id="gallery-panel-photos"
+                        role="tabpanel"
+                        aria-labelledby="gallery-tab-photos"
+                        exit={{
+                            opacity: 0,
+                            transition: { duration: reduceMotion ? 0 : 0.2 },
+                        }}
+                        className="grid grid-cols-2 gap-4 lg:grid-cols-4"
+                    >
+                        {images.map((item, index) => (
+                            <motion.button
+                                key={item.id}
+                                type="button"
+                                aria-label={`View full image: ${item.alt}`}
+                                aria-haspopup="dialog"
+                                onClick={() => openViewer("image", index)}
+                                variants={itemVariants}
+                                initial={reduceMotion ? false : "hidden"}
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.15 }}
+                                className="group relative aspect-[1.73] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-gray-100 shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            >
+                                <Image
+                                    src={item.image}
+                                    alt={item.alt}
+                                    fill
+                                    sizes="(max-width: 1023px) 50vw, 25vw"
+                                    className="object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-110"
+                                />
+                            </motion.button>
+                        ))}
+                    </motion.div>
 
-                   
+
                 </AnimatePresence>
             </Container>
 
@@ -342,7 +329,7 @@ export default function Gallery() {
                                 )}
                             </motion.div>
 
-                         
+
 
                             {total > 1 && (
                                 <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-4 text-white">
